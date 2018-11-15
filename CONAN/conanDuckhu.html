@@ -1,0 +1,486 @@
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="conanDuckhu.css">
+  <link rel="stylesheet" href="video.css">
+  <script type="text/javascript" src="conanDuckhu.js"></script>
+  <script type="text/javascript" src="page.js"></script>
+  <script type="text/javascript" src="video.js"></script>
+
+  <title>Conan</title>
+</head>
+<body>
+<div id="wrapping">
+  <div id="containerHead">
+    <div id="header">
+      <header>
+        <a href="conanDuckhu.html" title="">
+          <canvas id="canvas" width="500" height="auto"></canvas>
+        </a>
+        <div id="header-content">
+          <form>
+          <div id="loginForm">
+            <table id="loginTable">
+              <tbody>
+              <tr>
+                <td>
+                  <label for="email">Email</label>
+                </td>
+                <td>
+                  <label for="password">Password</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="email" id="email" name="email" class="login" onblur="checkEmail('email')">
+                </td>
+                <td>
+                  <input type="password" id="password" name="password" class="login" onblur="checkPassword()">
+                </td>
+                <td>
+                  <label for="loginButton">
+                    <input type="submit" id="loginButton" value="Log in">
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  <div>
+                    <a href="signup.html" id="signUp" style="text-decoration: none; color: #63a3ff">Sign up</a>
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          </form>
+          <!--<h1 id="logo"><a href="file:///C:/Users/Juno/Desktop/conanDuckhu/conanDuckhu/conanDuckhu.html" title="">detective <span style="color: red">conan</span></a></h1>
+          <h2 id="slogan">One truth prevails</h2>-->
+          <div id="conan"></div>
+        </div>
+      </header>
+    </div>
+    <div id="nav">
+      <nav>
+        <ul>
+          <li><a id="li1" class="unActive" href="#ne">News</a></li>
+          <li><a id="li2" href="#im">Image</a></li>
+          <li><a id="li3" href="#vo">Video</a></li>
+          <li><a id="li4" href="#ge">Game</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div id="containerBody">
+    <section>
+      <h1 id="home" class="active">Welcome to Detective Conan WebSite</h1>
+      <div id="news" class="unActive">
+        <div class="container">
+          <div class="article">
+            <article>
+              <h1 style="border-bottom: 1px solid #BDBDBD;"> News</h1>
+              <!-- 개발 -->
+              <div id="news1" class="news" class=active>
+                <header id="newsHeader1" class="newsHeader">
+                  <h1>코난을 깨운 범인은 바로 당신!</h1>
+                  <p>
+                    <time>2017-03-30 04:01</time>
+                  </p>
+                </header>
+                <article id="newsArticle1" class="newsArticle">
+                  <p style="font-weight:bold">다시 태어난 돗토리현… '명탐정 코난'을 찾아서</p>
+                  <mark>고교생 명탐정 신이치</mark>
+                  가 사라졌다. 실은 사라진 것이 아니라 줄어든 것이다. 소꿉친구 모리 란과 놀이동산 데이트를 즐기던 그는 롤러코스터에 동승했던 '검은 양복 사나이들'에게 수상쩍음을 느낀다. 몰래 뒤를
+                  밟다가 발각된 그는 둔기에 머리를 맞아 기절한 후 정체불명의 약을 먹고 여덟 살 꼬마로 변한다. 신이치는 탐정 도구를 발명하는 아가사 박사의 도움을 받아 '코난'이라는 이름으로 제
+                  신분을
+                  숨긴 채 '검은 조직'을 추적할 단서를 모아 가기 시작한다.
+                  <figure class="newsFigure">
+                    <img src="newsConan1.jpg" alt="The News Image">
+                    <figcaption class="newsFigcaption">1JR 선 유라역의 별칭은 ‘코난 역’이다. 열차에서 내려 플랫폼을 빠져나오면 커다란 ‘코난’ 조형물이 ‘코난의
+                      도시’에
+                      당도했음을 알린다. /김영근 기자
+                    </figcaption>
+                  </figure>
+                </article>
+                <footer id="newsFooter1" class="newsFooter">
+                  <p>Copyrights ⓒ <cite>조선일보</cite> & <cite>chosun.com</cite>,
+                    <mark>무단 전재 및 재배포 금지</mark>
+                  </p>
+                </footer>
+              </div>
+              <!-- -->
+              <div id="news2" class="news" class=unActive>
+                <header id="newsHeader2" class="newsHeader">
+                  <h1>'명탐정 코난: 에피소드 원' IPTV 및 VOD 단독 '더빙판' 최초 공개 </h1>
+                  <p>
+                    <time>2017-02-22 16:55</time>
+                  </p>
+                </header>
+                <article id="newsArticle2" class="newsArticle">
+                  <mark>시리즈 최초 프리퀄</mark>
+                  로 뜨거운 사랑을 받고 있는 영화 '명탐정 코난: 에피소드 원–작아진 명탐정(이하 명탐정 코난: 에피소드 원)'이 22일(수) IPTV 및 디지털 VOD 서비스를 시작하는 가운데,
+                  극장에서 볼 수 없었던 더빙판을 최초로 공개해 팬들의 이목이 집중되고 있다.
+                  <br><br>
+                  특히, '명탐정 코난: 에피소드 원'의 이번 IPTV/VOD 서비스는 자막판과 함께 최초로 더빙판 상영을 전격 결정, 팬들의 관심을 모으고 있다. 10여 년간 국내에서 일명
+                  '코덕'이라
+                  불리는 팬덤을 탄생시키며 많은 사랑을 받아 온 '명탐정 코난' 시리즈의 성우진들은 여느 톱스타 못지 않은 국민적 인기를 누리고 있어, IPTV/VOD 서비스를 통해 최초로 공개되는
+                  이번
+                  작품의 더빙판을 통해 국내 성우진들의 목소리를 다시 한 번 들을 수 있는 것 만으로도 팬들에게는 뜻 깊은 선물이 될 전망이다.
+                  <figure class="newsFigure">
+                    <img src="newsConan2.jpg" alt="COOOOOONAN!!!">
+                  </figure>
+                </article>
+                <footer id="newsFooter2" class="newsFooter">
+                  <p>이혁진 기자 <cite style="font-weight:bold">
+                    <small>GAME FOCUS</small>
+                  </cite>
+                  <address>baeyo@gamefocus.co.kr</address>
+                  </p>
+                </footer>
+              </div>
+              <div id="news3" class="news" class=unActive>
+                <header id="newsHeader3" class="newsHeader">
+                  <h1>Japan Box Office: Latest ‘Detective Conan’ Beats ‘Crayon Shinchan’</h1>
+                  <p><font style="font-weight:bold">Mark Schilling</font><br>Japan Correspondent</p>
+                </header>
+                <article id="newsArticle3" class="newsArticle">
+                  <figure class="newsFigure">
+                    <img src="newsConan3.jpg" alt="Detective Conan">
+                    <figcaption class="newsFigcaption">
+                      <time>APRIL 18, 2017 | 07:09AM PT</time>
+                    </figcaption>
+                  </figure>
+                  The 21st installment in the "
+                  <mark>Detective Conan</mark>
+                  " anime series, about a crime-solving teenager trapped in the body of a boy, opened atop the Japanese
+                  <mark>box office</mark>
+                  for the April 15-16 weekend.
+                  <br><br><br>
+                  Released on 368screens with Toho distributing, the film took $14 million on 989,000 admissions, This
+                  was
+                  6% better than the opening frame of the previous entry released last year which set an all-time series
+                  record with $68.5 million.
+                  <br><br><br>
+                  Ranking at number 2 was the newest and 25th entry in the"Crayon Shinchan" series about an obnoxious
+                  kindergarther and his frazzled parents. Opening on 349 screens, with Toho again distributing, the film
+                  earned $3.6 million. This was 18% down on the previous series entry, finished with %23 million last
+                  year.
+                  <br><br><br>
+                  The highest ranking new foreign entrant was Toho-Towa's "The Great Wall," in ninth place.
+                </article>
+                <footer id="newsFooter3" class="newsFooter">
+                  <p>
+                    <mark>FILED UNDER:</mark>
+                    <cite>
+                      <small>Box Office, Crayon Shinchan, Detective Conan, Japan</small>
+                    </cite></p>
+                </footer>
+              </div>
+              <div id="news4" class="news" class=unActive>
+                <header id="newsHeader4" class="newsHeader">
+                  <h1>Shop and Solve Riddles at the New Detective Conan Pop-Up Shop!</h1>
+                  <p>
+                    <mark>EVENT</mark>
+                    <time>Apr. 13, 2017 09:28</time>
+                  </p>
+                </header>
+                <article id="newsArticle4" class="newsArticle">
+                  Tokyo Dome City will temporarily be home to a
+                  <mark>Detective Conan</mark>
+                  pop-up shop from Apr. 14 to Jun. 30! Detective Conan Plaza will be offering a ton of quality goods
+                  like
+                  trading can badges, decorated chocolate sets, cookies, and other fun items!
+                  <figure class="newsFigure">
+                    <img src="newsConan4-1.jpg" alt="Conan Plaza">
+                    <figcaption class="newsFigcaption">DETECTIVE CONAN PLAZA AT TOKYO DOME CITY</figcaption>
+                  </figure>
+                  <figure class="newsFigure">
+                    <img src="newsConan4-2.jpg" alt="DETECTIVE CONAN COOKIE TIN">
+                    <figcaption class="newsFigcaption">DETECTIVE CONAN - COOKIE TIN</figcaption>
+                  </figure>
+                  The shop will also offer purchasing bonuses for fans who are dedicated enough to spend over a certain
+                  amount. Those spending over 2,000 yen will be rewarded with an A5 clear file, with different designs
+                  available depending on the date. If 5,000 yen is reached, the customer will be rewarded with the clear
+                  file and an original fabric bag. They’ll even get to choose which design they want out of the 6
+                  available!
+                </article>
+                <footer id="newsFooter4" class="newsFooter">
+                  <p>© <cite>Aoyama Gosho</cite> / <cite>Shogakukan</cite> / <cite>YTV</cite> / <cite>TMS 1996</cite>
+                  </p>
+                </footer>
+              </div>
+              <div id="news5" class="news" class=unActive>
+                <header id="newsHeader5" class="newsHeader">
+                  <h1>Chinese Universities Lets You Take a Semester on "Detective Conan"</h1>
+                  <h3>Hone your science and logice skills with courses based on the popular anime.</h3>
+                  <p>
+                    <mark>Kara Dennison</mark>
+                    <br>
+                    <time>May 06, 2017 12:04pm KST (17 days ago)</time>
+                  </p>
+                </header>
+                <article id="newsArticle5" class="newsArticle">
+                  In the US, you can take courses on everything from The Walking Dead to Doctor Who. And universities
+                  abroad, it turns out, aren't much different: two universities in China are teaching students to take
+                  their cues from Detective Conan when it comes to understanding subject matter.
+                  <figure class="newsFigure">
+                    <img src="newsConan5.png" alt="Conan and Friends">
+                  </figure>
+                  At the Huazhong University of Science and Technology in Wuhan, students can sign up for a course
+                  called
+                  "Detective Conan and Logical Reasoning," in which the show and its characters are studied as a way to
+                  improve logic skills. Meanwhile, at Changsha's Central South University, you can take a course
+                  following
+                  a similar approach for chemistry.
+                  <br><br>
+                  Lots of other franchises are inspiring courses around the country, too. For example, Guangzhou's Sun
+                  Yat-Sen University is currently offering a course that teaches genetics via the Harry Potter books.
+                  So,
+                  are they talking whether magic is dominant vs. recessive, or are they finally going to figure out why
+                  Harry didn't have his mother's eyes in the movie?
+                </article>
+                <footer id="newsFooter5" class="newsFooter">
+                  <p style="color:#999999">Tags:<br>
+                    <mark>detective conan</mark>
+                    ,
+                    <mark>cased closed</mark>
+                  </p>
+                </footer>
+              </div>
+            </article>
+          </div>
+
+          <div class="aside">
+            <aside>
+              <div>
+                <ul>
+                  <li class="asideTitle">News</li>
+                  <li><a id="nsd1" class="active" href="#1">news1</a></li>
+                  <li><a id="nsd2" href="#2">news2</a></li>
+                  <li><a id="nsd3" href="#3">news3</a></li>
+                  <li><a id="nsd4" href="#4">news4</a></li>
+                  <li><a id="nsd5" href="#5">news5</a></li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="image" class="unActive">
+        <div class="container">
+          <div class="article">
+            <article>
+              <div>
+                <h1 style="border-bottom: 1px solid #BDBDBD;"> Image</h1>
+                <div id="img1" class="image" class="unActive">
+                  <div class="imageFigure">
+                    <figure>
+                      <div id="imageNote1" class="imageNote"></div>
+                      <img id="image1" src="imageConan1.jpg" alt="Calling Conan.jpg">
+                    </figure>
+                  </div>
+                </div>
+                <div id="img2" class="image">
+                  <div class="imageFigure">
+                    <figure>
+                      <div id="imageNote2" class="imageNote"></div>
+                      <img id="image2" src="imageConan2.jpg" alt="Detective Conan With a Smile.jpg">
+                    </figure>
+                  </div>
+                </div>
+                <div id="img3" class="image">
+                  <div class="imageFigure">
+                    <figure>
+                      <div id="imageNote3" class="imageNote"></div>
+                      <img id="image3" src="imageConan3.jpg" alt="Conan In Confusion.jpg">
+                    </figure>
+                  </div>
+                </div>
+                <div id="img4" class="image">
+                  <div class="imageFigure">
+                    <figure>
+                      <div id="imageNote4" class="imageNote"></div>
+                      <img id="image4" src="imageConan4.gif" alt="Conan Aiming.gif">
+                    </figure>
+                  </div>
+                </div>
+                <div id="img5" class="image">
+                  <div class="imageFigure">
+                    <figure>
+                      <div id="imageNote5" class="imageNote"></div>
+                      <img id="image5" src="imageConan5.gif" alt="Conan Aiming(2).gif">
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="aside">
+            <aside>
+              <div>
+                <ul>
+                  <li class="asideTitle">Image</li>
+                  <li><a id="isd1" class="active" href="#1">Calling</a></li>
+                  <li><a id="isd2" href="#2">Smile</a></li>
+                  <li><a id="isd3" href="#3">Confusion</a></li>
+                  <li><a id="isd4" href="#4">Aiming(1)</a></li>
+                  <li><a id="isd5" href="#5">Aiming(2)</a></li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+
+      <div id="video" class="unActive">
+        <div class="container">
+          <div class="article">
+            <article>
+              <div>
+                <h1> Video</h1>
+                <div id="video1" class="player">
+                  <video id="media1" width="540" height="360" poster="videoImage.jpg">
+                    <source src="conan1.mp4">
+                    <source src="conan1.webm">
+                  </video>
+                  <nav class="videoNav">
+                    <div id="buttons1" class="buttons">
+                      <input type="button" id="play1" class="play" value="재생">
+                      <input type="button" id="mute1" class="mute" value="음소거">
+                    </div>
+                    <div id="bar1" class="bar">
+                      <div id="progress1" class="progress"></div>
+                    </div>
+                    <div id="control1" class="control">
+                      <input type="range" id="volume1" class="volume" min="0" max="1" step="0.1" value="0.6">
+                    </div>
+                  </nav>
+                </div>
+                <div id="video2" class="player">
+                  <video id="media2" width="540" height="360" poster="videoImage.jpg">
+                    <source src="conan2.mp4">
+                    <source src="conan2.webm">
+                  </video>
+                  <nav class="videoNav">
+                    <div id="buttons2" class="buttons">
+                      <input type="button" id="play2" class="play" value="재생">
+                      <input type="button" id="mute2" class="mute" value="음소거">
+                    </div>
+                    <div id="bar2" class="bar">
+                      <div id="progress2" class="progress"></div>
+                    </div>
+                    <div id="control2" class="control">
+                      <input type="range" id="volume2" class="volume" min="0" max="1" step="0.1" value="0.6">
+                    </div>
+                  </nav>
+                </div>
+                <div id="video3" class="player">
+                  <video id="media3" width="540" height="360" poster="videoImage.jpg">
+                    <source src="conan3.mp4">
+                    <source src="conan3.webm">
+                  </video>
+                  <nav class="videoNav">
+                    <div id="buttons3" class="buttons">
+                      <input type="button" id="play3" class="play" value="재생">
+                      <input type="button" id="mute3" class="mute" value="음소거">
+                    </div>
+                    <div id="bar3" class="bar">
+                      <div id="progress3" class="progress"></div>
+                    </div>
+                    <div id="control3" class="control">
+                      <input type="range" id="volume3" class="volume" min="0" max="1" step="0.1" value="0.6">
+                    </div>
+                  </nav>
+                </div>
+                <div id="video4" class="player">
+                  <video id="media4" width="540" height="360" poster="videoImage.jpg">
+                    <source src="conan4.mp4">
+                    <source src="conan4.webm">
+                  </video>
+                  <nav class="videoNav">
+                    <div id="buttons4" class="buttons">
+                      <input type="button" id="play4" class="play" value="재생">
+                      <input type="button" id="mute4" class="mute" value="음소거">
+                    </div>
+                    <div id="bar4" class="bar">
+                      <div id="progress4" class="progress"></div>
+                    </div>
+                    <div id="control4" class="control">
+                      <input type="range" id="volume4" class="volume" min="0" max="1" step="0.1" value="0.6">
+                    </div>
+                  </nav>
+                </div>
+                <div id="video5" class="player">
+                  <video id="media5" width="540" height="360" poster="videoImage.jpg">
+                    <source src="conan5.mp4">
+                    <source src="conan5.webm">
+                  </video>
+                  <nav class="videoNav">
+                    <div id="buttons5" class="buttons">
+                      <input type="button" id="play5" class="play" value="재생">
+                      <input type="button" id="mute5" class="mute" value="음소거">
+                    </div>
+                    <div id="bar5" class="bar">
+                      <div id="progress5" class="progress"></div>
+                    </div>
+                    <div id="control5" class="control">
+                      <input type="range" id="volume5" class="volume" min="0" max="1" step="0.1" value="0.6">
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="aside">
+            <aside>
+              <div>
+                <ul>
+                  <li class="asideTitle">Video</li>
+                  <li><a id="vsd1" class="active" href="#1">진홍의 연가</a></li>
+                  <li><a id="vsd2" href="#2">정상 결전</a></li>
+                  <li><a id="vsd3" href="#3">루팡 3세</a></li>
+                  <li><a id="vsd4" href="#4">화염의 해바라기</a></li>
+                  <li><a id="vsd5" href="#5">11번째 스트라이커</a></li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+
+      <div id="game" class="unActive">
+        <div class="container">
+          <div class="article">
+            <article>
+              <div>
+                <h1 style="border-bottom: 1px solid #BDBDBD;"> Game</h1>
+                <div id="game1">
+                  <div id='scoreboard' class='floatingControls'>Score: 0</div>
+                  <canvas id='gameCanvas' width='800' height='450'></canvas>
+                  <script src='reqNextAnimation.js'></script>
+                  <script src='sprites.js'></script>
+                  <script src='conanGame.js'></script>
+                  <link rel="stylesheet" href="conanGame.css"/>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="footer">
+    <footer style="text-align: center">
+      Copyright &copy; 2017
+    </footer>
+  </div>
+</div>
+</body>
+</html>

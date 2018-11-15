@@ -1,0 +1,31 @@
+output {
+    color: #fff;
+}
+
+.floatingControls {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    font: 12px Arial;
+}
+
+#gameCanvas {
+    background: #0c1d48;
+    cursor: pointer;
+}
+
+#scoreboard {
+    left: 750px;
+    width: 790px;
+    top: 50px;
+    background: #0c1d48;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px;
+    text-align: right;
+}
+
+#controls {
+    position: absolute;
+    left: 285px;
+    top: 20px;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign_up</title>
+</head>
+<link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
+<script src="bower_components/material-design-lite/material.min.js"></script>
+<script type="text/javascript" src="signup.js"></script>
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+<link rel="stylesheet" href="signup.css">
+<body>
+<div id="container_header">
+    <header>
+        <img src='Detective_Conan_logo.svg.png'>
+    </header>
+</div>
+<form method="post">
+    <div id="container_body">
+        <section>
+            <div class="input">
+                <!-- length of Id-->
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" id="id" placeholder="id" minlength="5"
+                           maxlength="12"
+                           onBlur="checkId()" required/>
+                    <div id="Error1" class="error" style="display: none"> please enter id</div>
+                </div>
+                <!-- length of password-->
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="password" id="password" minlength="12" maxlength="20"
+                           placeholder="password" onBlur="checkPassword()" required/>
+                    <div id="Error2" class="error" style="display: none">please enter password</div>
+                </div>
+                <div>
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" id="password2" type="password" minlength="12" maxlength="20"
+                               placeholder="re-enter password" onBlur="checkPassword2()" required/>
+                        <div id="Error3" class="error" style="display: none">please re-enter password</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--personal information-->
+            <div>
+                <div class="input">
+                    <!--user name-->
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="name" placeholder="name"
+                               onBlur="checkName()" required/>
+                        <div id="Error4" class="error" style="display: none">please enter your name</div>
+                    </div>
+                    <!--user gender-->
+                    <div class="button-group round toggle" data-toggle="buttons-radio" onBlur="checkGender()"
+                         aria-required="true">
+                        <input type="radio" id="man" name="gender" data-toggle="button">
+                        <label for="man" class="gender">Male</label>
+                        <input type="radio" id="woman" name="gender" data-toggle="button">
+                        <label for="woman" class="gender">Female</label>
+                        <div id="Error5" class="error" style="display: none">please choose your gender</div>
+                    </div>
+                    <!--user birthday inform and e-mail-->
+                    <div>
+                        <div id="inform" style="height: 60px">
+                            <div id="birth" class="inform" style="font-size: 25px;"><b>BirthDay</b></div>
+                            <div id="year0" class="inform">
+                                <input id="year" type="text" placeholder="year" minlength="4" maxlength="4"
+                                       onblur="checkYear()"
+                                       required/>
+                            </div>
+                            <div id="mon" class="inform">
+                                <select id="month" title="month" onBlur="checkMonth()">
+                                    <option value>Month</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div id="day0" class="inform">
+                                <input id="day" type="text" placeholder="day" maxlength="2" onblur="checkDay()"
+                                       required/>
+                            </div>
+                        </div>
+                        <!--birth day error-->
+                        <div id="Error6" class="error" style="display: none">please enter year</div>
+                        <div id="Error7" class="error" style="display: none">please choose month</div>
+                        <div id="Error8" class="error" style="display: none">please choose day</div>
+
+                        <!--e-mail-->
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" id="email" type="email" maxlength="40"
+                                   placeholder="e-mail"
+                                   onblur="checkEmail()" required/>
+                            <div id="Error9" class="error" style="display: none">please enter your e-mail</div>
+                        </div>
+                    </div>
+                </div> <!--personal information end-->
+                <!--user validate by phone number-->
+            </div>
+            <div class="input">
+                <div id="cellNum">
+                    <!--select country-->
+                    <div id="country_num" class="check">
+                        <select class=" country">
+                            <option value="82">+82</option>
+                        </select>|
+                    </div>
+                    <!--input phone number-->
+                    <div id="cell_phone_num0" class="check">
+                        <input id="cell_phone_num" type="text" placeholder="phone number" onblur="checkPhone_num()"
+                               required/>
+                    </div>
+                    <!--validating phone number button-->
+                    <div id="checking" class="check">
+                        <button type="button" class="mdl-button mdl-js-button" onclick="checkInteger('cell_phone_num')">
+                            Send
+                        </button>
+                    </div>
+                </div>
+                <div id="Error10" class="error" style="display: none">please enter your phone number</div>
+                <!--validation check number-->
+                <div id="checkNum">
+                    <div id="check_num0" class="check">
+                        <input id="check_num" type="text" placeholder="validation number" onblur="checkNum()" required/>
+                    </div>
+                    <div id="check_btn" class="check">
+                        <button type="button" class="mdl-button mdl-js-button" onclick="checkInteger('check_num')">
+                            check
+                        </button>
+                    </div>
+                </div>
+                <div id="Error11" class="error" style="display: none">please enter validation number</div>
+            </div>
+        </section>
+        <!--sign up button-->
+        <div>
+            <input type="Submit" class="sign_up" value="sign up"/>
+        </div>
+        <!--go to main page-->
+        <div id="goToMain">
+            <a href="ConanDuckhu.html">go to main</a>
+        </div>
+    </div> <!--container body end-->
+</form>
+<div id="footer">
+    <footer>
+        Copyright &copy; 2017
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+/* Video design here    */
+.videoNav {
+    width: 540px;
+    display: flex;
+}
+
+.player {
+    height: auto;
+    width: 540px;
+    margin: 20px auto;
+    padding: 10px 5px 5px 5px;
+    background: #484848;
+    border: 1px solid #666666;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    width: 20%;
+    margin-top: 5px;
+    padding: 0px;
+}
+
+.control {
+    flex: 1;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.play {
+    border-color: #000000;
+    border-radius: 10px;
+    color: #000000;
+    flex: 1;
+    font-weight: bold;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    background: #EAEAEA;
+}
+
+.mute {
+    border-color: #000000;
+    border-radius: 10px;
+    color: #000000;
+    flex: 1;
+    font-weight: bold;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    background: #EAEAEA;
+}
+
+.bar {
+    margin: auto 5px auto;
+    flex: 5;
+    height: 3px;
+    /*width:50%;*/
+    border: 1px solid black;
+    border-radius: 10px;
+    background: black;
+}
+
+.progress {
+    height: 3px;
+    width: 0;
+    background: #5F00FF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+/* News */
+.news .unActive {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsHeader {
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+
+.newsArticle {
+    padding: 10px;
+    margin: 10px;
+}
+
+.newsFigure {
+    padding: 10px;
+    text-align: center;
+}
+
+.newsFigcaption {
+    font-size: small;
+    text-align: center;
+}
+
+.newsFooter {
+    border-top: 1px solid #000000;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Image */
+.image {
+}
+
+.imageFigure {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.imageNote {
+    position: absolute;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.7);
+    height: 50px;
+    border: 0;
+    padding: 0 10px 5px;
+    margin: 0;
+}
+
+.imageNoteVisible {
+    visibility: visible;
+
+}
+
+
+
+
+
+
+
+
